@@ -210,7 +210,7 @@ ul{
 /* Header */
 div.hero {
   background-image: url('../img/encabezado.jpg');
-  height: 100vh;
+  height: 98.8vh;
   background-position: top center;
   background-size: cover;
 
@@ -238,6 +238,11 @@ nav.redes-sociales a {
 
 nav.redes-sociales:last-child {
   margin-right: 0;
+}
+
+.informacion-evento a{
+  text-decoration: none;
+  color: white;
 }
 
 @media(min-width: 768px) {
@@ -818,16 +823,135 @@ blockquote p::before{
   font-family: 'Oswald' sans-serif;
 }
 
+/*Páginas internas*/
+
+/*Registro*/
+.registro h3{
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0 0 0;
+}
+
+.registro label{
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+h4{
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid #fe4918;
+  padding-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.caja{
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+  margin: 10px;
+}
+
+.campo{
+  padding: 20px;
+}
+
+@media(min-width: 768px) {
+  .campo{
+    width:33.3%;
+    float: left;
+  }
+}
+
+.paquetes .tabla-precio:hover{
+  transform: none;
+  box-shadow: none;
+}
+
+.paquetes .tabla-precio input{
+  clear: both;
+  width: 100px;
+  margin: 10px auto 0 auto;
+  display: block;
+}
+
+.contenido-dia{
+  padding: 20px;
+  display: none;
+}
+
+@media(min-width: 768px) {
+  .contenido-dia > div{
+    float: left;
+    width: 33.3%;
+  }
+}
+
+.contenido-dia > div p{
+  text-align: left;
+}
+
+.contenido-dia > div label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contenido-dia > div input{
+  margin-right: 10px;
+  padding: 40px;
+}
+
+.contenido-dia > div label time{
+  color: #fe4918;
+}
+
+/*Resumen registro*/
+
+.resumen p {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.resumen .extras{
+  float:left;
+  width:50%;
+  padding: 30px;
+}
+
+.resumen .extras .pedido{
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.resumen .extras .pedido input{
+  margin: 10px 0 0 0;
+}
+
+.resumen .total{
+  margin-right: 70px;
+  float: right;
+  widows: 50%;
+  padding: 30px;
+}
+
+.resumen input{
+  display: block;
+  margin: 10px auto;
+}
 
 
+.suma-total{
+  text-align: center;
+  font-size: 2em;
+  color: #fe4918
+}
 
-
-
-
-
-
-
-
+#error {
+  clear: both;
+  padding: 15px;
+  text-align: center;
+  display: none;
+}
 
 
 
