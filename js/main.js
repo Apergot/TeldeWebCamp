@@ -5,20 +5,7 @@
 
     document.addEventListener('DOMContentLoaded', function(){
 
-        //Usando leaflet, la libreria para el mapa que queremos mostrar.
-        var map = L.map('mapa').setView([27.998418, -15.413518], 16);
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-        
-        L.marker([27.998418, -15.413518]).addTo(map)
-            .bindPopup('TeldeWebCamp')//aquí admite html, con lo cual podemos hacer lo que queramos con css agregando una clase
-            .openPopup();
-            /*Esto es un hover para el pin básicamente.
-            .bindTooltip('Prueba')
-            .openTooltip();
-            */
+        console.log('Perdocorrecto');
 
         //Campos de los datos de usuario
         var nombre = document.getElementById('nombre');
@@ -108,7 +95,7 @@
                 for(let i = 0; i < listadoProductos.length; i++){
                     lista_productos.innerHTML += listadoProductos[i] + '<br>'
                 }
-
+                console.log(`${totalPagar}`);
                 total.innerHTML = totalPagar.toFixed(2) + '€';
             }
         }
