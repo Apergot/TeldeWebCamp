@@ -774,7 +774,7 @@ blockquote p::before{
 }
 
 .newsletter::before{
-  background-image: url('/img/bg-newsletter.jpg');
+  background-image: url('../img/bg-newsletter.jpg');
   content: '';
 }
 
@@ -862,6 +862,18 @@ blockquote p::before{
 }
 
 /*Páginas internas*/
+
+/*Conferencia*/
+
+.contenedor-fotos{
+  margin-left: 50px;
+}
+
+.galeria{
+  display:inline-block;
+  margin-bottom: 10px;
+}
+
 
 /*Registro*/
 .registro h3{
