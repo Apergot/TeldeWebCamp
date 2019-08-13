@@ -163,10 +163,6 @@
     observer.observe(mapPane, {
         attributes: true
     });
-
-
-
-
 })();
 
 
@@ -203,4 +199,8 @@ $(function(){
         var enlace = $(this).attr('href');
         $(enlace).fadeIn(1000);
     });
+
+    //Colorbox
+    $('.invitado-info').colorbox({inline:true, width:"50%"});
+
 });

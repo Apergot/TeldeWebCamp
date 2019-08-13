@@ -15,9 +15,20 @@
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/all.min.css">
       <link rel="stylesheet" href="css/lightbox.css">
+      <link rel="stylesheet" href="css/colorbox.css">
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
       <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="css/main.css">
+
+      <?php
+      $archivo = basename($_SERVER['PHP_SELF']);
+      $pagina = str_replace('.php', '', $archivo);
+      if($pagina == 'ponentes' || $pagina =='index'){
+        echo '<script src ="js/jquery.colorbox-min.js"></script>';
+      }else if($pagina == 'conferencias'){
+        echo '<script src="js/lightbox.js"></script>';
+      }
+      ?>
     
       <meta name="theme-color" content="#fafafa">
     </head>
@@ -42,7 +53,7 @@
                 <p class="fecha"><i class="far fa-calendar-alt" aria-hidden="true"></i> Próximamente</p>
                 <p class="ciudad"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Telde, Gran Canaria</p>
               </div>
-              <a href="index.html"><h1 class="nombre-sitio"> TeldeWebCamp</h1></a>
+              <a href="index.php"><h1 class="nombre-sitio"> TeldeWebCamp</h1></a>
               <p class="slogan"><span> La mejor conferencia de desarrollo web </span></p>
             </div>
     
@@ -64,8 +75,8 @@
           </div>
           <nav class="navegacion-principal">
             <a href="conferencias.php">Conferencia</a>
-            <a href="">Calendario</a>
-            <a href="#">Ponentes</a>
+            <a href="calendario.php">Calendario</a>
+            <a href="ponentes.php">Ponentes</a>
             <a href="registro.php">Entradas</a>
           </nav>
         </div>

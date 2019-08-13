@@ -1,8 +1,8 @@
-<?php include_once 'includes/templates/header.php'?>
+<?php include_once 'includes/templates/header.php' ?>
 
 <div class="seccion contenedor">
     <h2>La mejor conferencia de diseño web en español</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus harum perferendis maiores quia commodi, 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus harum perferendis maiores quia commodi,
         iure officiis voluptas neque odit quasi mollitia omnis debitis, illo, dolore itaque ipsum molestias fugit!</p>
 </div>
 
@@ -11,20 +11,20 @@
 
     <div class="contenedor-fotos">
         <div class="galeria">
-        <?php 
+            <?php
             //Usando la librería de javascript lightbox hacemos una galería bastante fácil de implementar.
-            for($i = 0; $i < 21; $i++){
-                if($i < 9){
-                    echo '<a href="img/galeria/0'. ($i+1) .'.jpg" data-lightbox = "galeria">
-                    <img src="img/galeria/thumbs/0'. ($i+1) .'.jpg" alt="">
+            for ($i = 0; $i < 21; $i++) {
+                if ($i < 9) {
+                    echo '<a href="img/galeria/0' . ($i + 1) . '.jpg" data-lightbox = "galeria">
+                    <img src="img/galeria/thumbs/0' . ($i + 1) . '.jpg" alt="">
                     </a>';
-                }else{
-                    echo '<a href="img/galeria/'. ($i+1) .'.jpg" data-lightbox = "galeria">
-                    <img src="img/galeria/thumbs/'. ($i+1) .'.jpg" alt="">
+                } else {
+                    echo '<a href="img/galeria/' . ($i + 1) . '.jpg" data-lightbox = "galeria">
+                    <img src="img/galeria/thumbs/' . ($i + 1) . '.jpg" alt="">
                     </a>';
                 }
             }
-        ?>
+            ?>
         </div>
     </div>
 </section>

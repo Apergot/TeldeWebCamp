@@ -1003,12 +1003,58 @@ h4{
   display: none;
 }
 
+/*Calendario*/
 
+.calendario{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+}
 
+.calendario::after{
+  content: '';
+  clear: both;
+}
 
+.calendario .fecha{
+  padding: 50px;
+  text-align: center;
+  grid-column: span 2;
+}
 
+.dia{
+  border: 1px solid #e1e1e1;
+}
 
+.dia p{
+  font-size: 1.2em;
+  margin: 0;
+  padding: 10px;
+}
 
+.dia .hora{
+  font-size: 1em;
+}
+
+.dia i{
+  color: #fe4918;
+  font-size: 1em;
+  transition: all .3s ease-in-out;
+  margin-right: 5px;
+}
+
+.dia:hover{
+  background-color: #e1e1e1;
+  -webkit-transform: scale(1.1);
+}
+
+/*Colorbox*/
+.cboxElement{
+  padding: 30px!important;
+  text-align: center;
+
+}
 
 
 

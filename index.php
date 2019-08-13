@@ -23,6 +23,7 @@
       <div class="contenedor">
         <div class="programa-evento">
           <h2>Programa del evento</h2>
+
           <nav class="menu-programa">
             <a href="#talleres"><i class="fa fa-code" aria-hidden="true"></i>Talleres</a>
             <a href="#conferencias"><i class="fa fa-comment" aria-hidden="true"></i>Conferencias</a>
@@ -78,47 +79,7 @@
     </div>
   </section>
 
-  <section class="invitados contenedor seccion">
-    <h2>Nuestros Ponentes</h2>
-    <ul class="lista-invitados clearfix">
-      <li>
-        <div class="invitado">
-          <img src="img/invitado1.jpg" alt="inv">
-          <p class="nombre">Alejandro Perdomo</p>
-        </div>
-      </li>
-      <li>
-        <div class="invitado">
-          <img src="img/invitado2.jpg" alt="inv">
-          <p class="nombre">Alejandro Perdomo</p>
-        </div>
-      </li>
-      <li>
-        <div class="invitado">
-          <img src="img/invitado3.jpg" alt="inv">
-          <p class="nombre">Alejandro Perdomo</p>
-        </div>
-      </li>
-      <li>
-        <div class="invitado">
-          <img src="img/invitado4.jpg" alt="inv">
-          <p class="nombre">Alejandro Perdomo</p>
-        </div>
-      </li>
-      <li>
-        <div class="invitado">
-          <img src="img/invitado5.jpg" alt="inv">
-          <p class="nombre">Alejandro Perdomo</p>
-        </div>
-      </li>
-      <li>
-        <div class="invitado">
-          <img src="img/invitado6.jpg" alt="inv">
-          <p class="nombre">Alejandro Perdomo</p>
-        </div>
-      </li>
-    </ul>
-  </section>
+  <?php include_once 'includes/templates/ponentes.php'?>
 
   <div class="contador parallax">
     <div class="contenedor">
